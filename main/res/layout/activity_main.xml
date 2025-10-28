@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- 1. TÍTULO (SIN CAMBIOS) -->
+    <TextView
+        android:id="@+id/textMenuPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/main_menu_title"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 2. IMAGEN (SIN CAMBIOS) -->
+    <ImageView
+        android:id="@+id/imagePulgar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMenuPrincipal"
+        app:srcCompat="@drawable/logo"
+        tools:srcCompat="@tools:sample/avatars"
+        app:layout_constraintBottom_toTopOf="@+id/botoAnarATasques" /> <!-- MODIFICADO: Ahora apunta al nuevo botón -->
+
+    <!-- 3. GRUPO DE BOTONES (SIN CAMBIOS EN LOS EXISTENTES) -->
+    <Button
+        android:id="@+id/botoVeureLlista"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/view_user_list_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botoAnarARegistre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/go_to_register_button"
+        app:layout_constraintBottom_toTopOf="@+id/botoVeureLlista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botoAnarANoticies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Noticias"
+        app:layout_constraintBottom_toTopOf="@+id/botoAnarARegistre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botoAnarACalculadora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/go_to_calculator_button"
+        app:layout_constraintBottom_toTopOf="@+id/botoAnarANoticies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- ▼▼▼ NUEVO BOTÓN PARA TASQUES I NOTES ▼▼▼ -->
+    <Button
+        android:id="@+id/botoAnarATasques"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Tasques i Notes"
+        app:layout_constraintBottom_toTopOf="@+id/botoAnarACalculadora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!-- ▲▲▲ FIN DEL NUEVO BOTÓN ▲▲▲ -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CalculadoraActivity">
+
+    <!-- CAMPOS PARA LOS NÚMEROS -->
+    <EditText
+        android:id="@+id/editTextNumero1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/first_number_hint"
+        android:inputType="numberDecimal|numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumero2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/second_number_hint"
+        android:inputType="numberDecimal|numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumero1"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumero1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumero1" />
+
+    <!-- CONTENEDOR PARA LOS BOTONES DE OPERACIONES -->
+    <LinearLayout
+        android:id="@+id/operationsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumero2"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumero2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumero2">
+
+        <!-- Los textos de los botones son símbolos matemáticos, no necesitan traducción -->
+        <Button
+            android:id="@+id/botoSumar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/botoRestar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/botoMultiplicar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="×"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/botoDividir"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="÷"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- TEXTVIEW PARA EL RESULTADO -->
+    <TextView
+        android:id="@+id/textResultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/result_label"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operationsLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

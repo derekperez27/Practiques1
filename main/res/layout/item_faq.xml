@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Este TextView debe tener el ID que FaqAdapter busca -->
+    <TextView
+        android:id="@+id/faq_question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="?android:attr/textColorPrimary"/>
+
+    <!-- Este es el segundo TextView que también necesita el adaptador -->
+    <TextView
+        android:id="@+id/faq_answer_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="?android:attr/textColorSecondary"/>
+
+</LinearLayout>

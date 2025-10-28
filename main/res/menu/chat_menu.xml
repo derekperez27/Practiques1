@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Opción de FAQ que ya tenías -->
+    <item
+        android:id="@+id/action_faq"
+        android:icon="@drawable/ic_faq"
+        android:title="Preguntas Frecuentes"
+        app:showAsAction="ifRoom" />
+
+    <!-- ▼▼▼ LÍNEA MODIFICADA ▼▼▼ -->
+    <item
+        android:id="@+id/veurehistorial"
+        android:icon="@drawable/veurehistorial"
+        android:title="Veure Historial"
+        app:showAsAction="ifRoom" />
+    <!-- ▲▲▲ FIN DE LA MODIFICACIÓN ▲▲▲ -->
+
+</menu>

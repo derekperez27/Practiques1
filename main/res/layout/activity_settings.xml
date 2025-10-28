@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <!-- 1. OPCIÓ DE MODE FOSC -->
+    <TextView
+        android:id="@+id/darkModeLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Mode Fosc"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/switchDarkMode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/darkModeLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/darkModeLabel" />
+
+    <!-- 2. OPCIÓ D'IDIOMA -->
+    <TextView
+        android:id="@+id/languageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Idioma"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/darkModeLabel" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupLanguages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/languageLabel"
+        app:layout_constraintTop_toBottomOf="@id/languageLabel">
+
+        <RadioButton
+            android:id="@+id/radioCatalan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Català" />
+
+        <RadioButton
+            android:id="@+id/radioSpanish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Español" />
+
+        <RadioButton
+            android:id="@+id/radioEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English" />
+
+
+        <RadioButton
+            android:id="@+id/radioItalian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Italiano" />
+
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

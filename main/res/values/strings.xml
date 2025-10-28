@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">La Meva App</string>
+    <string name="settings_title">Configuració</string>
+    <string name="dark_mode_label">Mode Fosc</string>
+    <string name="language_label">Idioma</string>
+    <string name="language_catalan">Català</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_english">English</string>
+    <string name="language_italian">Italiano</string>
+    <string name="main_menu_title">Menú Principal</string>
+    <string name="go_to_calculator_button">Anar a la Calculadora</string>
+    <string name="go_to_chat_button">Anar al Xat / Login</string>
+    <string name="go_to_register_button">Anar al Registre</string>
+    <string name="view_user_list_button">Veure Llista d\'Usuaris</string>
+    <string name="login_title">Iniciar Sessió</string>
+    <string name="email_hint">Introdueix el teu correu</string>
+    <string name="login_button">Entrar</string>
+    <string name="login_success">Sessió iniciada correctament</string>
+    <string name="login_error">Error: No s\'ha pogut iniciar sessió</string>
+    <string name="fill_email_prompt">Per favor, introdueix el teu correu</string>
+    <string name="calculator_title">Calculadora</string>
+    <string name="first_number_hint">Primer número</string>
+    <string name="second_number_hint">Segon número</string>
+    <string name="result_label">Resultat:</string>
+    <string name="error_fill_both_fields">Cal omplir els dos camps</string>
+    <string name="error_invalid_numbers">Introdueix números vàlids</string>
+    <string name="error_divide_by_zero">No es pot dividir per zero</string>
+    <string name="register_title">Formulari de Registre</string>
+    <string name="full_name_hint">Nom complet</string>
+    <string name="age_hint">Edat</string>
+    <string name="save_user_button">Desar Usuari</string>
+    <string name="go_to_login_prompt">Ja tens un compte? Inicia sessió aquí</string>
+    <string name="user_list_title">Llista d\'Usuaris Registrats</string>
+    <string name="news_title">Notícies</string>
+    <string name="error_search_query_empty">Per favor, introdueix un terme de cerca</string>
+    <string name="chat_message_hint">Escriu un missatge…</string>
+    <string name="chat_send_button">Enviar</string>
+</resources>
+
